@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Connection Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Backend Connection Test</h1>
+    <p>This page tests the connection between frontend and backend.</p>
+    
+    <div class="test" id="test1">
+        <h3>Test 1: Basic Connection</h3>
+        <button onclick="testBasicConnection()">Test Connection</button>
+        <div id="result1"></div>
+    </div>
+    
+    <div class="test" id="test2">
+        <h3>Test 2: Data Fetching</h3>
+        <button onclick="testDataFetch()">Fetch Data</button>
+        <div id="result2"></div>
+    </div>
+    
+    <div class="test" id="test3">
+        <h3>Test 3: Continuous Updates</h3>
+        <button onclick="startContinuousTest()">Start Continuous Test</button>
+        <button onclick="stopContinuousTest()">Stop Test</button>
+        <div id="result3"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        let intervalId = null;
+
+        async function testBasicConnection() {
+            const resultDiv = document.getElementById('result1');
+            const testDiv = document.getElementById('test1');
+            
+            try {
+                const response = await fetch(`${API_BASE}/test`);
+                const data = await response.json();
+                
+                resultDiv.innerHTML = `<pre>✅ Success: ${JSON.stringify(data, null, 2)}</pre>`;
+                testDiv.className = 'test success';
+            } catch (error) {
+                resultDiv.innerHTML = `<pre>❌ Error: ${error.message}</pre>`;
+                testDiv.className = 'test error';
+            }
+        }
+
+        async function testDataFetch() {
+            const resultDiv = document.getElementById('result2');
+            const testDiv = document.getElementById('test2');
+            
+            try {
+                const response = await fetch(`${API_BASE}/next_data`);
+                const data = await response.json();
+                
+                resultDiv.innerHTML = `<pre>✅ Data: ${JSON.stringify(data, null, 2)}</pre>`;
+                testDiv.className = 'test success';
+            } catch (error) {
+                resultDiv.innerHTML = `<pre>❌ Error: ${error.message}</pre>`;
+                testDiv.className = 'test error';
+            }
+        }
+
+        function startContinuousTest() {
+            const resultDiv = document.getElementById('result3');
+            const testDiv = document.getElementById('test3');
+            
+            resultDiv.innerHTML = '<p>🔄 Starting continuous test...</p>';
+            testDiv.className = 'test';
+            
+            let count = 0;
+            intervalId = setInterval(async () => {
+                try {
+                    const response = await fetch(`${API_BASE}/next_data`);
+                    const data = await response.json();
+                    count++;
+                    
+                    resultDiv.innerHTML = `
+                        <p>✅ Update ${count}: ${data.time} - $${data.value}</p>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                    testDiv.className = 'test success';
+                } catch (error) {
+                    resultDiv.innerHTML = `<p>❌ Error: ${error.message}</p>`;
+                    testDiv.className = 'test error';
+                    clearInterval(intervalId);
+                }
+            }, 2000);
+        }
+
+        function stopContinuousTest() {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+                document.getElementById('result3').innerHTML += '<p>⏹️ Test stopped</p>';
+            }
+        }
+    </script>
+</body>
+</html>

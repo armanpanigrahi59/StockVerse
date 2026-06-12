@@ -1,0 +1,11 @@
+fastapi==0.104.1
+pandas==2.1.4
+uvicorn[standard]==0.24.0
+flask==3.0.0
+flask-cors==4.0.0
+google-generativeai==0.3.2
+python-dotenv==1.0.0
+gunicorn==21.2.0
+psutil==5.9.8
+requests==2.31.0
+httpx==0.25.0

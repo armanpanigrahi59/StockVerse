@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "company": "Tata Consultancy Services (TCS)",
+    "yearStart": 2010,
+    "priceStart": 400,
+    "headline": "India's IT exports booming as global demand for outsourcing rises.",
+    "correctAnswer": "Outperform",
+    "explanation": "TCS stock grew over 5x by 2020, driven by strong IT demand."
+  },
+  {
+    "id": 2,
+    "company": "Yes Bank",
+    "yearStart": 2010,
+    "priceStart": 60,
+    "headline": "Private banks expand aggressively amid rising competition.",
+    "correctAnswer": "Underperform",
+    "explanation": "Yes Bank's governance issues led to a collapse post-2018."
+  },
+  {
+    "id": 3,
+    "company": "Hindustan Unilever (HUL)",
+    "yearStart": 2010,
+    "priceStart": 250,
+    "headline": "Rising consumer demand boosts FMCG outlook.",
+    "correctAnswer": "Outperform",
+    "explanation": "HUL grew steadily, giving consistent returns over the decade."
+  },
+  {
+    "id": 4,
+    "company": "Coal India",
+    "yearStart": 2010,
+    "priceStart": 290,
+    "headline": "New PSU IPO generates massive investor interest.",
+    "correctAnswer": "Underperform",
+    "explanation": "Coal India underperformed due to declining coal demand and PSU inefficiencies."
+  },
+  {
+    "id": 5,
+    "company": "Maruti Suzuki",
+    "yearStart": 2010,
+    "priceStart": 1400,
+    "headline": "Car ownership in India surges amid growing middle class.",
+    "correctAnswer": "Outperform",
+    "explanation": "Maruti benefited from expanding auto market till mid-decade."
+  },
+  {
+    "id": 6,
+    "company": "Infosys",
+    "yearStart": 2010,
+    "priceStart": 300,
+    "headline": "IT services sector faces pressure from global slowdown.",
+    "correctAnswer": "Outperform",
+    "explanation": "Despite volatility, Infosys saw major growth by 2020."
+  },
+  {
+    "id": 7,
+    "company": "SBI",
+    "yearStart": 2010,
+    "priceStart": 250,
+    "headline": "Public sector banks tighten lending amid rising NPAs.",
+    "correctAnswer": "Average",
+    "explanation": "SBI grew moderately but lagged behind private peers."
+  },
+  {
+    "id": 8,
+    "company": "Bharti Airtel",
+    "yearStart": 2010,
+    "priceStart": 300,
+    "headline": "Telecom price wars intensify as new entrants challenge incumbents.",
+    "correctAnswer": "Average",
+    "explanation": "Airtel recovered post-Jio but had years of stagnation."
+  },
+  {
+    "id": 9,
+    "company": "Reliance Industries",
+    "yearStart": 2010,
+    "priceStart": 1000,
+    "headline": "Oil-to-retail conglomerate explores new ventures in telecom.",
+    "correctAnswer": "Outperform",
+    "explanation": "Reliance transformed via Jio and retail expansion, huge decade returns."
+  },
+  {
+    "id": 10,
+    "company": "Jet Airways",
+    "yearStart": 2010,
+    "priceStart": 550,
+    "headline": "Aviation sector set for explosive passenger growth.",
+    "correctAnswer": "Underperform",
+    "explanation": "Jet Airways went bankrupt; major underperformance."
+  }
+]

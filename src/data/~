@@ -1,0 +1,162 @@
+[
+  {
+    "id": "pocket_money_1",
+    "text": "Your parents give you ₹500 pocket money. What will you do?",
+    "options": [
+      { "text": "Save half for later", "effect": { "cash": 250, "literacy": 5, "happiness": 2 } },
+      { "text": "Spend it all on snacks", "effect": { "cash": 0, "literacy": -3, "happiness": 5 } }
+    ]
+  },
+  {
+    "id": "birthday_cash",
+    "text": "You received ₹1000 as birthday gift.",
+    "options": [
+      { "text": "Deposit in savings account", "effect": { "cash": 1000, "literacy": 4 } },
+      { "text": "Buy expensive shoes", "effect": { "cash": 0, "literacy": -2, "happiness": 4 } }
+    ]
+  },
+  {
+    "id": "school_trip",
+    "text": "Class trip costs ₹800. You have ₹1000 saved.",
+    "options": [
+      { "text": "Join but set a spending limit", "effect": { "cash": 200, "literacy": 3, "happiness": 5 } },
+      { "text": "Spend all on snacks and souvenirs", "effect": { "cash": 0, "literacy": -3, "happiness": 8 } }
+    ]
+  },
+  {
+    "id": "friend_loan",
+    "text": "A friend asks to borrow ₹300.",
+    "options": [
+      { "text": "Lend politely but record it", "effect": { "cash": -300, "literacy": 3, "happiness": 2 } },
+      { "text": "Give without tracking", "effect": { "cash": -300, "literacy": -2, "happiness": 1 } }
+    ]
+  },
+  {
+    "id": "mobile_data",
+    "text": "Your data plan renewal is due. A premium plan costs double.",
+    "options": [
+      { "text": "Choose regular plan", "effect": { "cash": -200, "literacy": 2 } },
+      { "text": "Buy premium for bragging rights", "effect": { "cash": -400, "literacy": -2, "happiness": 4 } }
+    ]
+  },
+  {
+    "id": "part_time_job",
+    "text": "You got ₹2000 from a part-time job.",
+    "options": [
+      { "text": "Save 50% before spending", "effect": { "cash": 1000, "literacy": 5 } },
+      { "text": "Spend everything instantly", "effect": { "cash": 0, "literacy": -3, "happiness": 5 } }
+    ]
+  },
+  {
+    "id": "group_gift",
+    "text": "Friends want to buy a ₹1000 birthday gift together. Your share is ₹200.",
+    "options": [
+      { "text": "Join, but stick to your budget", "effect": { "cash": -200, "literacy": 3, "happiness": 3 } },
+      { "text": "Offer to pay extra to impress", "effect": { "cash": -400, "literacy": -2, "happiness": 1 } }
+    ]
+  },
+  {
+    "id": "secondhand_bike",
+    "text": "You need a cycle for school.",
+    "options": [
+      { "text": "Buy a good second-hand one", "effect": { "cash": -700, "literacy": 4, "happiness": 3 } },
+      { "text": "Buy new expensive model on EMI", "effect": { "cash": -2000, "debt": 1300, "literacy": -4 } }
+    ]
+  },
+  {
+    "id": "school_lunch",
+    "text": "You spend ₹100 daily on canteen food.",
+    "options": [
+      { "text": "Start packing lunch 3 days a week", "effect": { "cash": 300, "literacy": 3, "health": 3 } },
+      { "text": "Keep buying food daily", "effect": { "cash": 0, "literacy": -1, "happiness": 2 } }
+    ]
+  },
+  {
+    "id": "budget_plan",
+    "text": "Teacher asks you to make a monthly budget.",
+    "options": [
+      { "text": "Track expenses honestly", "effect": { "literacy": 6 } },
+      { "text": "Skip it, seems boring", "effect": { "literacy": -3, "happiness": 2 } }
+    ]
+  },
+  {
+    "id": "festival_sale",
+    "text": "A festival sale tempts you to buy a gaming headset.",
+    "options": [
+      { "text": "Compare prices first", "effect": { "literacy": 3, "cash": -1500 } },
+      { "text": "Buy impulsively", "effect": { "literacy": -3, "cash": -2000, "happiness": 3 } }
+    ]
+  },
+  {
+    "id": "charity_drive",
+    "text": "School starts a charity fund for flood victims.",
+    "options": [
+      { "text": "Donate small but meaningful amount", "effect": { "cash": -100, "happiness": 4, "literacy": 2 } },
+      { "text": "Ignore it", "effect": { "happiness": -2 } }
+    ]
+  },
+  {
+    "id": "library_fine",
+    "text": "You forgot to return a library book and got fined ₹50.",
+    "options": [
+      { "text": "Pay immediately and note reminder next time", "effect": { "cash": -50, "literacy": 2 } },
+      { "text": "Ignore until fine doubles", "effect": { "cash": -100, "literacy": -3 } }
+    ]
+  },
+  {
+    "id": "online_course",
+    "text": "A free online course teaches basic investing.",
+    "options": [
+      { "text": "Enroll and finish it", "effect": { "literacy": 8, "happiness": 3 } },
+      { "text": "Skip it, looks too long", "effect": { "literacy": -2 } }
+    ]
+  },
+  {
+    "id": "phone_upgrade",
+    "text": "Your old phone still works fine but a new model launched.",
+    "options": [
+      { "text": "Keep old phone until necessary", "effect": { "literacy": 4 } },
+      { "text": "Buy new on credit", "effect": { "debt": 2000, "literacy": -4, "happiness": 4 } }
+    ]
+  },
+  {
+    "id": "saving_goal",
+    "text": "You want to buy headphones worth ₹1500 in two months.",
+    "options": [
+      { "text": "Save ₹750 each month", "effect": { "literacy": 4, "cash": 0 } },
+      { "text": "Borrow from parents immediately", "effect": { "literacy": -3, "debt": 1500 } }
+    ]
+  },
+  {
+    "id": "unexpected_gift",
+    "text": "An aunt gifts you ₹2000 unexpectedly.",
+    "options": [
+      { "text": "Invest half in FD", "effect": { "cash": 1000, "literacy": 4 } },
+      { "text": "Spend all on clothes", "effect": { "cash": 0, "literacy": -3, "happiness": 5 } }
+    ]
+  },
+  {
+    "id": "health_check",
+    "text": "You’ve been skipping breakfast to save time.",
+    "options": [
+      { "text": "Fix routine and eat properly", "effect": { "health": 8, "literacy": 2 } },
+      { "text": "Ignore until sick", "effect": { "health": -10, "literacy": -2 } }
+    ]
+  },
+  {
+    "id": "used_books",
+    "text": "New textbooks cost ₹1500, used ones ₹800.",
+    "options": [
+      { "text": "Buy used and save ₹700", "effect": { "cash": 700, "literacy": 3 } },
+      { "text": "Buy new for status", "effect": { "cash": 0, "literacy": -2 } }
+    ]
+  },
+  {
+    "id": "reward_points",
+    "text": "You got reward points on your digital wallet.",
+    "options": [
+      { "text": "Redeem only for needed items", "effect": { "literacy": 3 } },
+      { "text": "Use them to buy random stuff", "effect": { "literacy": -2, "happiness": 3 } }
+    ]
+  }
+]

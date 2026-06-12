@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockBot - AI Stock Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --background: 229 47% 8%;
+            --foreground: 210 40% 98%;
+            --card: 229 40% 12%;
+            --card-foreground: 210 40% 98%;
+            --popover: 229 45% 10%;
+            --popover-foreground: 210 40% 98%;
+            --primary: 158 100% 50%;
+            --primary-foreground: 229 47% 8%;
+            --secondary: 262 83% 58%;
+            --secondary-foreground: 210 40% 98%;
+            --muted: 229 30% 20%;
+            --muted-foreground: 215 20% 65%;
+            --accent: 217 91% 60%;
+            --accent-foreground: 210 40% 98%;
+            --border: 229 30% 18%;
+            --radius: 1rem;
+            --glass-bg: 229 40% 12% / 0.4;
+            --glass-border: 229 30% 25% / 0.2;
+            --glow-primary: 158 100% 50% / 0.3;
+            --glow-secondary: 262 83% 58% / 0.3;
+            --gradient-primary: linear-gradient(135deg, hsl(158 100% 50%), hsl(217 91% 60%));
+            --gradient-glass: linear-gradient(135deg, hsl(229 40% 12% / 0.6), hsl(229 40% 12% / 0.2));
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: hsl(var(--background));
+            color: hsl(var(--foreground));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            background: var(--gradient-glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid hsl(var(--glass-border));
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            padding: 3rem;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--gradient-primary);
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 20px hsl(var(--glow-primary)));
+        }
+        
+        h1 {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            color: hsl(var(--muted-foreground));
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: hsl(var(--card) / 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid hsl(var(--border) / 0.5);
+            border-radius: 1rem;
+        }
+        
+        .features h3 {
+            color: hsl(var(--foreground));
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features li {
+            padding: 0.75rem 0;
+            color: hsl(var(--muted-foreground));
+            display: flex;
+            align-items: center;
+        }
+        
+        .features li:before {
+            content: "💡";
+            margin-right: 0.75rem;
+            font-size: 1.2rem;
+        }
+        
+        .chat-btn {
+            background: var(--gradient-primary);
+            color: hsl(var(--primary-foreground));
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 0 20px hsl(var(--glow-primary));
+        }
+        
+        .chat-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px hsl(var(--glow-primary));
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            color: hsl(var(--muted-foreground));
+            font-size: 0.9rem;
+        }
+        
+        .glow-animation {
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse-glow {
+            from {
+                box-shadow: 0 0 20px hsl(var(--glow-primary));
+            }
+            to {
+                box-shadow: 0 0 30px hsl(var(--glow-primary)), 0 0 40px hsl(var(--glow-primary));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo glow-animation">🤖</div>
+        <h1>StockBot</h1>
+        <p class="subtitle">Your AI-Powered Stock Trading Assistant</p>
+        
+        <div class="features">
+            <h3>What I can help you with:</h3>
+            <ul>
+                <li>Stock analysis and insights</li>
+                <li>Trading strategies and tips</li>
+                <li>Portfolio management advice</li>
+                <li>Market trends and explanations</li>
+                <li>Risk management strategies</li>
+            </ul>
+        </div>
+        
+        <a href="/chat" class="chat-btn">Start Chatting</a>
+        
+        <div class="footer">
+            <p>Powered by Google Gemini AI</p>
+        </div>
+    </div>
+</body>
+</html>

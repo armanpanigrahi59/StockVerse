@@ -1,0 +1,323 @@
+[
+    {
+      "id": "first_salary",
+      "text": "You received your first salary of ₹35,000.",
+      "options": [
+        { "text": "Invest 20% before spending", "effect": { "cash": 28000, "literacy": 5, "happiness": 3 } },
+        { "text": "Spend freely this month", "effect": { "cash": 0, "literacy": -3, "happiness": 5 } }
+      ]
+    },
+    {
+      "id": "rent_or_buy",
+      "text": "You are considering moving out. Renting costs ₹10,000/month, buying a flat requires ₹10L loan.",
+      "options": [
+        { "text": "Rent and start saving for down payment", "effect": { "cash": -10000, "literacy": 4 } },
+        { "text": "Take a loan immediately", "effect": { "cash": -20000, "debt": 1000000, "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "credit_card_offer",
+      "text": "Bank offers a premium credit card with 2% cashback and ₹500 annual fee.",
+      "options": [
+        { "text": "Take it and pay bills on time", "effect": { "literacy": 4, "cash": -500 } },
+        { "text": "Ignore and use debit card only", "effect": { "literacy": 2 } }
+      ]
+    },
+    {
+      "id": "mutual_fund",
+      "text": "A colleague suggests investing ₹5000/month in a mutual fund SIP.",
+      "options": [
+        { "text": "Start SIP regularly", "effect": { "cash": -5000, "literacy": 5 } },
+        { "text": "Avoid it, prefer savings account", "effect": { "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "emergency_fund",
+      "text": "You realize you have no emergency fund yet.",
+      "options": [
+        { "text": "Start saving 10% salary monthly", "effect": { "literacy": 4, "cash": -3500 } },
+        { "text": "Ignore and focus on lifestyle", "effect": { "literacy": -3, "happiness": 2 } }
+      ]
+    },
+    {
+      "id": "insurance_offer",
+      "text": "Agent offers life insurance worth ₹10L with ₹800/month premium.",
+      "options": [
+        { "text": "Buy term plan only", "effect": { "cash": -800, "literacy": 3 } },
+        { "text": "Buy expensive endowment plan", "effect": { "cash": -2500, "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "car_purchase",
+      "text": "You want to buy a car worth ₹7L.",
+      "options": [
+        { "text": "Buy used car for ₹3L cash", "effect": { "cash": -300000, "literacy": 3 } },
+        { "text": "Take EMI on ₹7L", "effect": { "debt": 700000, "literacy": -3, "happiness": 3 } }
+      ]
+    },
+    {
+      "id": "tax_filing",
+      "text": "You must file income tax for the first time.",
+      "options": [
+        { "text": "Learn and file yourself online", "effect": { "literacy": 5 } },
+        { "text": "Ignore till penalty", "effect": { "cash": -2000, "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "side_hustle",
+      "text": "A friend offers a freelance project worth ₹10,000.",
+      "options": [
+        { "text": "Accept and deliver on weekends", "effect": { "cash": 10000, "literacy": 3, "happiness": -1 } },
+        { "text": "Decline to rest weekends", "effect": { "happiness": 3 } }
+      ]
+    },
+    {
+      "id": "stock_tip",
+      "text": "You get a ‘sure profit’ stock tip on social media.",
+      "options": [
+        { "text": "Avoid and do own research", "effect": { "literacy": 4 } },
+        { "text": "Invest ₹20,000 blindly", "effect": { "cash": -20000, "literacy": -3, "happiness": -2 } }
+      ]
+    },
+    {
+      "id": "medical_expense",
+      "text": "A medical emergency costs ₹15,000 unexpectedly.",
+      "options": [
+        { "text": "Use emergency fund", "effect": { "cash": -15000, "literacy": 2 } },
+        { "text": "Borrow on credit card", "effect": { "debt": 15000, "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "promotion_offer",
+      "text": "You’re offered a promotion with higher salary but more stress.",
+      "options": [
+        { "text": "Accept for growth", "effect": { "cash": 10000, "happiness": -5, "literacy": 3 } },
+        { "text": "Decline for balance", "effect": { "happiness": 5, "literacy": 2 } }
+      ]
+    },
+    {
+      "id": "friends_trip",
+      "text": "Friends plan a Goa trip costing ₹25,000.",
+      "options": [
+        { "text": "Go but set budget", "effect": { "cash": -20000, "happiness": 6, "literacy": 2 } },
+        { "text": "Skip and invest the money", "effect": { "cash": 0, "literacy": 4, "happiness": -1 } }
+      ]
+    },
+    {
+      "id": "investment_scam",
+      "text": "An online ad promises 50% monthly returns.",
+      "options": [
+        { "text": "Report and avoid it", "effect": { "literacy": 5 } },
+        { "text": "Invest ₹10,000 to test", "effect": { "cash": -10000, "literacy": -5 } }
+      ]
+    },
+    {
+      "id": "job_change",
+      "text": "You got a new job offer with 30% more pay but relocation costs ₹50,000.",
+      "options": [
+        { "text": "Negotiate relocation support", "effect": { "cash": -10000, "literacy": 4 } },
+        { "text": "Move at own expense", "effect": { "cash": -50000, "literacy": -1 } }
+      ]
+    },
+    {
+      "id": "loan_prepayment",
+      "text": "You have extra ₹50,000. Your car loan interest is 10%.",
+      "options": [
+        { "text": "Prepay the loan", "effect": { "cash": -50000, "debt": -50000, "literacy": 3 } },
+        { "text": "Spend it on gadgets", "effect": { "cash": 0, "literacy": -2, "happiness": 4 } }
+      ]
+    },
+    {
+      "id": "mutual_fund_crash",
+      "text": "Your mutual fund dropped 10% this month.",
+      "options": [
+        { "text": "Stay invested long-term", "effect": { "literacy": 3 } },
+        { "text": "Panic sell", "effect": { "cash": -10000, "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "gym_membership",
+      "text": "A yearly gym plan costs ₹15,000 upfront.",
+      "options": [
+        { "text": "Join only if you’ll go regularly", "effect": { "cash": -15000, "health": 5, "literacy": 2 } },
+        { "text": "Buy impulsively, rarely go", "effect": { "cash": -15000, "health": -1, "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "mobile_upgrade",
+      "text": "Your phone EMI is still running but a new model launched.",
+      "options": [
+        { "text": "Finish EMI before upgrading", "effect": { "literacy": 3 } },
+        { "text": "Exchange with new loan", "effect": { "debt": 15000, "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "office_party",
+      "text": "Office dinner costs ₹2000 contribution.",
+      "options": [
+        { "text": "Attend, budget accordingly", "effect": { "cash": -2000, "happiness": 3 } },
+        { "text": "Skip politely", "effect": { "happiness": -1, "literacy": 1 } }
+      ]
+    },
+    {
+      "id": "health_insurance",
+      "text": "Company offers group health insurance. Personal plan costs ₹1000/month.",
+      "options": [
+        { "text": "Buy personal plan too", "effect": { "cash": -1000, "literacy": 4 } },
+        { "text": "Rely only on company plan", "effect": { "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "gadget_sale",
+      "text": "You sell your old laptop for ₹20,000.",
+      "options": [
+        { "text": "Add to investment fund", "effect": { "cash": 20000, "literacy": 3 } },
+        { "text": "Spend on luxury watch", "effect": { "cash": 0, "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "loan_refinance",
+      "text": "Bank offers lower interest rate on your loan.",
+      "options": [
+        { "text": "Refinance and reduce EMI", "effect": { "literacy": 4, "cash": 2000 } },
+        { "text": "Ignore offer", "effect": { "literacy": -1 } }
+      ]
+    },
+    {
+      "id": "crypto_hype",
+      "text": "Everyone is investing in cryptocurrency.",
+      "options": [
+        { "text": "Invest small amount after research", "effect": { "cash": -5000, "literacy": 3 } },
+        { "text": "Put all savings impulsively", "effect": { "cash": -30000, "literacy": -4 } }
+      ]
+    },
+    {
+      "id": "wedding_expense",
+      "text": "A cousin’s wedding trip costs ₹30,000 total.",
+      "options": [
+        { "text": "Attend modestly within budget", "effect": { "cash": -15000, "happiness": 4 } },
+        { "text": "Overspend to impress relatives", "effect": { "cash": -30000, "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "rental_investment",
+      "text": "You consider buying property for rent income.",
+      "options": [
+        { "text": "Do ROI analysis before investing", "effect": { "literacy": 4 } },
+        { "text": "Buy impulsively with loan", "effect": { "debt": 1500000, "literacy": -4 } }
+      ]
+    },
+    {
+      "id": "holiday_budget",
+      "text": "Annual vacation budget is ₹40,000.",
+      "options": [
+        { "text": "Plan early and book deals", "effect": { "cash": -35000, "literacy": 3, "happiness": 5 } },
+        { "text": "Book last minute expensive trip", "effect": { "cash": -50000, "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "loan_default_friend",
+      "text": "A friend asks you to co-sign a ₹2L loan.",
+      "options": [
+        { "text": "Politely decline", "effect": { "literacy": 3 } },
+        { "text": "Agree without checking risk", "effect": { "debt": 200000, "literacy": -4 } }
+      ]
+    },
+    {
+      "id": "parents_support",
+      "text": "Parents ask ₹5000 monthly for expenses.",
+      "options": [
+        { "text": "Help and adjust budget", "effect": { "cash": -5000, "happiness": 3, "literacy": 2 } },
+        { "text": "Refuse to help", "effect": { "happiness": -3 } }
+      ]
+    },
+    {
+      "id": "career_course",
+      "text": "A skill course costs ₹15,000 but can raise your salary later.",
+      "options": [
+        { "text": "Enroll and finish", "effect": { "cash": -15000, "literacy": 6 } },
+        { "text": "Skip it to save money", "effect": { "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "credit_score",
+      "text": "Your credit score drops due to late payment.",
+      "options": [
+        { "text": "Pay dues and set reminders", "effect": { "cash": -2000, "literacy": 3 } },
+        { "text": "Ignore it", "effect": { "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "festival_sale",
+      "text": "Festival sale offers 20% off on electronics.",
+      "options": [
+        { "text": "Buy only if needed", "effect": { "literacy": 3 } },
+        { "text": "Buy random gadgets", "effect": { "cash": -10000, "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "office_investment_group",
+      "text": "Colleagues form an investment group.",
+      "options": [
+        { "text": "Join and learn collaboratively", "effect": { "literacy": 4, "happiness": 2 } },
+        { "text": "Avoid financial discussions", "effect": { "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "health_issue",
+      "text": "You develop stress due to overwork.",
+      "options": [
+        { "text": "Take break and exercise", "effect": { "health": 8, "happiness": 4 } },
+        { "text": "Ignore health for work", "effect": { "health": -10, "literacy": -1 } }
+      ]
+    },
+    {
+      "id": "tax_planning",
+      "text": "Year-end tax saving deadline is near.",
+      "options": [
+        { "text": "Invest in ELSS or PPF", "effect": { "cash": -15000, "literacy": 5 } },
+        { "text": "Do nothing, pay full tax", "effect": { "cash": -30000, "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "market_boom",
+      "text": "Stock market is up 20%.",
+      "options": [
+        { "text": "Book partial profits", "effect": { "cash": 10000, "literacy": 3 } },
+        { "text": "Buy aggressively at peak", "effect": { "cash": -15000, "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "donation",
+      "text": "You consider donating to an NGO.",
+      "options": [
+        { "text": "Donate within means", "effect": { "cash": -3000, "happiness": 5 } },
+        { "text": "Over-donate impulsively", "effect": { "cash": -10000, "literacy": -1 } }
+      ]
+    },
+    {
+      "id": "career_switch",
+      "text": "You want to switch to a startup with uncertain pay.",
+      "options": [
+        { "text": "Keep 6 months buffer before switch", "effect": { "cash": -20000, "literacy": 4 } },
+        { "text": "Quit immediately", "effect": { "cash": 0, "literacy": -3 } }
+      ]
+    },
+    {
+      "id": "retirement_plan",
+      "text": "At 30, you think about retirement planning.",
+      "options": [
+        { "text": "Start NPS or PF contributions", "effect": { "cash": -5000, "literacy": 5 } },
+        { "text": "Delay till 40", "effect": { "literacy": -2 } }
+      ]
+    },
+    {
+      "id": "inflation_rise",
+      "text": "Inflation increases living costs by 10%.",
+      "options": [
+        { "text": "Rebalance monthly budget", "effect": { "literacy": 3 } },
+        { "text": "Ignore and overspend", "effect": { "cash": -5000, "literacy": -3 } }
+      ]
+    }
+  ]
+  

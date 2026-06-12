@@ -1,0 +1,215 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "news": "Tata Motors reports a 45% increase in quarterly profit driven by strong JLR sales and improved domestic demand.",
+        "question": "Should you invest in Tata Motors after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Strong profits and global demand suggest growth momentum and likely positive investor sentiment."
+      },
+      {
+        "id": 2,
+        "news": "Zomato faces regulatory scrutiny over alleged unfair pricing practices by the Competition Commission of India (CCI).",
+        "question": "Should you invest in Zomato after this news?",
+        "correct_answer": "No",
+        "explanation": "Regulatory risk can dampen investor confidence and cause short-term volatility."
+      },
+      {
+        "id": 3,
+        "news": "Infosys announces a large ₹1.5 billion deal with a global bank to provide digital transformation services.",
+        "question": "Should you invest in Infosys after this news?",
+        "correct_answer": "Yes",
+        "explanation": "A major client win improves revenue visibility and enhances long-term growth potential."
+      },
+      {
+        "id": 4,
+        "news": "Adani Ports sees cargo volumes decline by 10% due to global trade slowdown.",
+        "question": "Should you invest in Adani Ports after this news?",
+        "correct_answer": "No",
+        "explanation": "Falling volumes imply weaker business momentum and can pressure earnings."
+      },
+      {
+        "id": 5,
+        "news": "HDFC Bank's net profit rises 25% year-on-year, with strong loan growth and stable asset quality.",
+        "question": "Should you invest in HDFC Bank after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Consistent profitability and sound asset quality point to financial stability."
+      },
+      {
+        "id": 6,
+        "news": "Maruti Suzuki halts production at one of its plants due to supply chain disruptions from a parts shortage.",
+        "question": "Should you invest in Maruti Suzuki after this news?",
+        "correct_answer": "No",
+        "explanation": "Production disruptions often hurt short-term revenues and investor confidence."
+      },
+      {
+        "id": 7,
+        "news": "Reliance Industries announces a 20% stake sale in its retail arm to a global investor at a premium valuation.",
+        "question": "Should you invest in Reliance Industries after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Stake sales at premium valuations improve liquidity and highlight business value."
+      },
+      {
+        "id": 8,
+        "news": "Paytm’s quarterly losses widen due to higher marketing spend and slowing transaction growth.",
+        "question": "Should you invest in Paytm after this news?",
+        "correct_answer": "No",
+        "explanation": "Widening losses indicate unsustainable business metrics and pressure on cash flow."
+      },
+      {
+        "id": 9,
+        "news": "Indian Oil Corporation announces a major investment in renewable energy to diversify its portfolio.",
+        "question": "Should you invest in Indian Oil after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Diversification towards renewables strengthens long-term sustainability."
+      },
+      {
+        "id": 10,
+        "news": "Wipro’s quarterly revenue misses estimates, and management lowers next quarter guidance.",
+        "question": "Should you invest in Wipro after this news?",
+        "correct_answer": "No",
+        "explanation": "Lower guidance often signals near-term business challenges."
+      },
+      {
+        "id": 11,
+        "news": "State Bank of India reports record profits and improved asset quality with declining NPAs.",
+        "question": "Should you invest in SBI after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Declining NPAs and strong profits reflect operational strength and market leadership."
+      },
+      {
+        "id": 12,
+        "news": "Bharti Airtel increases mobile tariffs by 10% to improve ARPU and profitability.",
+        "question": "Should you invest in Bharti Airtel after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Higher tariffs can directly boost margins and earnings outlook."
+      },
+      {
+        "id": 13,
+        "news": "Tata Steel posts a quarterly loss due to falling global steel prices and high input costs.",
+        "question": "Should you invest in Tata Steel after this news?",
+        "correct_answer": "No",
+        "explanation": "Falling prices and losses suggest sector weakness and margin pressure."
+      },
+      {
+        "id": 14,
+        "news": "Hindustan Unilever announces strong sales growth in rural India due to higher FMCG demand.",
+        "question": "Should you invest in HUL after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Rural demand recovery supports consistent revenue growth for FMCG leaders."
+      },
+      {
+        "id": 15,
+        "news": "Nykaa’s promoters sell 5% stake via open market to raise personal funds.",
+        "question": "Should you invest in Nykaa after this news?",
+        "correct_answer": "No",
+        "explanation": "Promoter stake sales can signal reduced confidence and may trigger price weakness."
+      },
+      {
+        "id": 16,
+        "news": "Coal India declares its highest-ever dividend after strong earnings in the last fiscal year.",
+        "question": "Should you invest in Coal India after this news?",
+        "correct_answer": "Yes",
+        "explanation": "High dividends reward shareholders and reflect healthy cash flow."
+      },
+      {
+        "id": 17,
+        "news": "IRCTC faces temporary service disruption due to a cyberattack on its ticketing platform.",
+        "question": "Should you invest in IRCTC after this news?",
+        "correct_answer": "No",
+        "explanation": "Cybersecurity incidents can disrupt operations and dent investor confidence."
+      },
+      {
+        "id": 18,
+        "news": "UltraTech Cement announces a capacity expansion plan of 20% to meet infrastructure demand.",
+        "question": "Should you invest in UltraTech Cement after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Capacity expansion shows confidence in demand growth and long-term prospects."
+      },
+      {
+        "id": 19,
+        "news": "SpiceJet reports continued quarterly losses due to rising fuel costs and operational challenges.",
+        "question": "Should you invest in SpiceJet after this news?",
+        "correct_answer": "No",
+        "explanation": "Ongoing losses indicate financial stress and uncertain future performance."
+      },
+      {
+        "id": 20,
+        "news": "Larsen & Toubro wins a ₹10,000 crore order for building renewable infrastructure projects.",
+        "question": "Should you invest in L&T after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Large orders enhance revenue visibility and strengthen order book momentum."
+      },
+      {
+        "id": 21,
+        "news": "ITC posts better-than-expected quarterly results with strong cigarette and FMCG segment growth.",
+        "question": "Should you invest in ITC after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Robust performance across segments supports a positive outlook."
+      },
+      {
+        "id": 22,
+        "news": "Vodafone Idea delays its 5G rollout due to financial constraints.",
+        "question": "Should you invest in Vodafone Idea after this news?",
+        "correct_answer": "No",
+        "explanation": "Delayed rollout highlights liquidity issues and competitive disadvantage."
+      },
+      {
+        "id": 23,
+        "news": "Nestle India faces backlash for misleading product labeling and is fined by FSSAI.",
+        "question": "Should you invest in Nestle India after this news?",
+        "correct_answer": "No",
+        "explanation": "Regulatory fines can affect brand trust and lead to temporary stock weakness."
+      },
+      {
+        "id": 24,
+        "news": "Apollo Hospitals expands its network by acquiring 10 new hospitals in tier-2 cities.",
+        "question": "Should you invest in Apollo Hospitals after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Expansion into new markets increases revenue potential and market reach."
+      },
+      {
+        "id": 25,
+        "news": "Hero MotoCorp reports lower sales in the festive season due to weak rural demand.",
+        "question": "Should you invest in Hero MotoCorp after this news?",
+        "correct_answer": "No",
+        "explanation": "Weak sales signal demand slowdown and potential earnings pressure."
+      },
+      {
+        "id": 26,
+        "news": "Tata Power signs long-term solar energy supply contracts with state governments.",
+        "question": "Should you invest in Tata Power after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Long-term contracts add revenue stability and align with clean energy goals."
+      },
+      {
+        "id": 27,
+        "news": "HCLTech announces leadership change as CEO resigns unexpectedly.",
+        "question": "Should you invest in HCLTech after this news?",
+        "correct_answer": "No",
+        "explanation": "Leadership uncertainty can create short-term volatility and strategic risk."
+      },
+      {
+        "id": 28,
+        "news": "Britannia Industries launches a new product line aimed at the health-conscious segment.",
+        "question": "Should you invest in Britannia after this news?",
+        "correct_answer": "Yes",
+        "explanation": "New launches targeting growth segments often drive revenue expansion."
+      },
+      {
+        "id": 29,
+        "news": "Bandhan Bank reports a rise in NPAs due to stress in microfinance loans.",
+        "question": "Should you invest in Bandhan Bank after this news?",
+        "correct_answer": "No",
+        "explanation": "Higher NPAs indicate asset quality deterioration and can hurt profitability."
+      },
+      {
+        "id": 30,
+        "news": "Dr. Reddy’s Laboratories receives USFDA approval for a new generic cancer drug.",
+        "question": "Should you invest in Dr. Reddy’s after this news?",
+        "correct_answer": "Yes",
+        "explanation": "Regulatory approvals open new revenue streams and boost earnings potential."
+      }
+    ]
+  }
+  

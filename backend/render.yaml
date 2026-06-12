@@ -1,0 +1,26 @@
+services:
+  # Main FastAPI Server
+  - type: web
+    name: stock-verse-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 4 -k uvicorn.workers.UvicornWorker server:app --timeout 120 --keep-alive 5
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: PYTHONUNBUFFERED
+        value: "1"
+
+  # Chatbot Flask Server
+  - type: web
+    name: stock-verse-assistant
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn chatbot_server:app --workers 4 --timeout 120 --keep-alive 5
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: GEMINI_API_KEY
+        sync: false
