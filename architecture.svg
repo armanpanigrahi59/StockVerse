@@ -1,0 +1,313 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients and styles -->
+  <defs>
+    <!-- Gradient for header -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for frontend -->
+    <linearGradient id="frontendGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for backend -->
+    <linearGradient id="backendGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for external services -->
+    <linearGradient id="externalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for data layer -->
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#30cfd0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#330867;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+    </marker>
+    <marker id="arrowcyan" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0891b2" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <rect x="0" y="0" width="1200" height="80" fill="url(#headerGrad)"/>
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">
+    Stock_Verse Architecture
+  </text>
+  
+  <!-- User/Client Layer -->
+  <g id="user-layer">
+    <rect x="50" y="120" width="180" height="100" rx="10" fill="#6366f1" filter="url(#shadow)"/>
+    <text x="140" y="155" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+      👤 User
+    </text>
+    <text x="140" y="180" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">
+      Web Browser
+    </text>
+    <text x="140" y="200" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">
+      Desktop/Mobile
+    </text>
+  </g>
+  
+  <!-- Frontend Layer -->
+  <g id="frontend-layer">
+    <rect x="50" y="260" width="500" height="200" rx="10" fill="url(#frontendGrad)" filter="url(#shadow)"/>
+    <text x="300" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      🎨 Frontend Layer
+    </text>
+    
+    <!-- Frontend Components -->
+    <rect x="70" y="310" width="140" height="130" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="140" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      React 18.3
+    </text>
+    <text x="140" y="355" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • TypeScript
+    </text>
+    <text x="140" y="375" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Vite
+    </text>
+    <text x="140" y="395" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • React Router
+    </text>
+    <text x="140" y="415" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • React Query
+    </text>
+    
+    <rect x="230" y="310" width="140" height="130" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="300" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      UI Components
+    </text>
+    <text x="300" y="355" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Tailwind CSS
+    </text>
+    <text x="300" y="375" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • shadcn/ui
+    </text>
+    <text x="300" y="395" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Radix UI
+    </text>
+    <text x="300" y="415" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Recharts
+    </text>
+    
+    <rect x="390" y="310" width="140" height="130" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="460" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      Features
+    </text>
+    <text x="460" y="355" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Dashboard
+    </text>
+    <text x="460" y="375" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Games
+    </text>
+    <text x="460" y="395" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Portfolio
+    </text>
+    <text x="460" y="415" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Leaderboard
+    </text>
+  </g>
+  
+  <!-- Backend Layer -->
+  <g id="backend-layer">
+    <rect x="650" y="260" width="500" height="200" rx="10" fill="url(#backendGrad)" filter="url(#shadow)"/>
+    <text x="900" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      ⚙️ Backend Layer
+    </text>
+    
+    <!-- Backend Components -->
+    <rect x="670" y="310" width="140" height="130" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="740" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      FastAPI
+    </text>
+    <text x="740" y="355" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Python 3.11+
+    </text>
+    <text x="740" y="375" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Uvicorn
+    </text>
+    <text x="740" y="395" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • CORS
+    </text>
+    <text x="740" y="415" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • REST API
+    </text>
+    
+    <rect x="830" y="310" width="140" height="130" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="900" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      Flask Server
+    </text>
+    <text x="900" y="355" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Flask 3.0
+    </text>
+    <text x="900" y="375" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Flask-CORS
+    </text>
+    <text x="900" y="395" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Chatbot API
+    </text>
+    <text x="900" y="415" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Gunicorn
+    </text>
+    
+    <rect x="990" y="310" width="140" height="130" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="1060" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      Data Processing
+    </text>
+    <text x="1060" y="355" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Pandas
+    </text>
+    <text x="1060" y="375" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • HTTPX
+    </text>
+    <text x="1060" y="395" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Async IO
+    </text>
+    <text x="1060" y="415" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • CSV Data
+    </text>
+  </g>
+  
+  <!-- External Services Layer -->
+  <g id="external-layer">
+    <rect x="650" y="510" width="500" height="150" rx="10" fill="url(#externalGrad)" filter="url(#shadow)"/>
+    <text x="900" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      🌐 External Services
+    </text>
+    
+    <rect x="680" y="560" width="200" height="80" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="780" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      📈 Yahoo Finance API
+    </text>
+    <text x="780" y="605" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      Real-time Stock Data
+    </text>
+    <text x="780" y="625" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      Market Information
+    </text>
+    
+    <rect x="900" y="560" width="200" height="80" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="1000" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      🤖 Google Gemini AI
+    </text>
+    <text x="1000" y="605" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      Smart Chatbot
+    </text>
+    <text x="1000" y="625" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      Investment Assistant
+    </text>
+  </g>
+  
+  <!-- Data Storage Layer -->
+  <g id="data-layer">
+    <rect x="50" y="510" width="500" height="150" rx="10" fill="url(#dataGrad)" filter="url(#shadow)"/>
+    <text x="300" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      💾 Data Layer
+    </text>
+    
+    <rect x="80" y="560" width="140" height="80" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="150" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      JSON Files
+    </text>
+    <text x="150" y="605" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Stocks Data
+    </text>
+    <text x="150" y="625" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Quiz Questions
+    </text>
+    
+    <rect x="240" y="560" width="140" height="80" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="310" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      CSV Data
+    </text>
+    <text x="310" y="605" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Historical Data
+    </text>
+    <text x="310" y="625" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • OHLC Values
+    </text>
+    
+    <rect x="400" y="560" width="140" height="80" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <text x="470" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">
+      Local Storage
+    </text>
+    <text x="470" y="605" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • User Profiles
+    </text>
+    <text x="470" y="625" font-family="Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">
+      • Game State
+    </text>
+  </g>
+  
+  <!-- Deployment -->
+  <g id="deployment">
+    <rect x="300" y="710" width="600" height="60" rx="10" fill="#8b5cf6" filter="url(#shadow)"/>
+    <text x="600" y="735" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+      🚀 Deployment: Vercel (Frontend) | Render (Backend)
+    </text>
+    <text x="600" y="755" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">
+      CI/CD Pipeline • Auto-scaling • Global CDN
+    </text>
+  </g>
+  
+  <!-- Arrows connecting components -->
+  <!-- User to Frontend -->
+  <path d="M 140 220 L 140 260" stroke="#6366f1" stroke-width="3" fill="none" marker-end="url(#arrowblue)"/>
+  
+  <!-- Frontend to Backend -->
+  <path d="M 550 360 L 650 360" stroke="#2563eb" stroke-width="3" fill="none" marker-end="url(#arrowblue)"/>
+  
+  <!-- Backend to External Services -->
+  <path d="M 900 460 L 900 510" stroke="#16a34a" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+  
+  <!-- Data to Backend -->
+  <path d="M 300 510 L 740 460" stroke="#0891b2" stroke-width="3" fill="none" marker-end="url(#arrowcyan)"/>
+  
+  <!-- Frontend to Data -->
+  <path d="M 300 460 L 300 510" stroke="#0891b2" stroke-width="3" fill="none" marker-end="url(#arrowcyan)"/>
+  
+  <!-- Labels for arrows -->
+  <text x="140" y="245" font-family="Arial, sans-serif" font-size="11" fill="#6366f1" text-anchor="middle" font-weight="bold">
+    HTTP/HTTPS
+  </text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="bold">
+    REST API
+  </text>
+  <text x="920" y="490" font-family="Arial, sans-serif" font-size="11" fill="#16a34a" text-anchor="middle" font-weight="bold">
+    API Calls
+  </text>
+  <text x="500" y="490" font-family="Arial, sans-serif" font-size="11" fill="#0891b2" text-anchor="middle" font-weight="bold">
+    Data Access
+  </text>
+</svg>
